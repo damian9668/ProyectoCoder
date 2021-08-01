@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <title>Videos</title>
     <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <header>
-    <a href="../index.html"><img class="logo" src= "../images/Logo.png" alt="logo"></a>
-    <nav>
-        <ul class="barraNav">
-            <li class="elementosNav"><a class="textoNav" href="../index.html">Inicio</a></li>
-            <li class="elementosNav"><a class="textoNav" href="../pages/Buscar.html">Buscar</a></li>
-            <li class="elementosNav"><a class="textoNav" href="../pages/Compartir.html">Compartir</a></li>
-            <li class="elementosNav"><a class="textoNav" href="../pages/Videos.html">Videos</a></li>
-            <li class="elementosNav"><a class="textoNav" href="../pages/Contacto.html">Contacto</a></li>
+    <div>
+        <a href="../index.html"><img class="logo" src= "../images/Logo.png" alt="logo"></a>
+    </div>
+
+    <nav class="barraNav"> <!--BLoque-->
+        <ul class="barraNav__lista"> <!--Elemento-->
+            <li><a class="barraNav__textoNav" href="../index.html">Inicio</a></li>
+            <li><a class="barraNav__textoNav" href="../pages/Buscar.html">Buscar</a></li>
+            <li><a class="barraNav__textoNav" href="../pages/Compartir.html">Compartir</a></li>
+            <li><a class="barraNav__textoNav" href="../pages/Videos.html">Videos</a></li>
+            <li><a class="barraNav__textoNav" href="../pages/Contacto.html">Contacto</a></li>
         </ul>
     </nav>
-<hr>
 </header>
 
 <section>
-    <fieldset>
-        <legend>Videos De Recetas Destacadas</legend>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6ADNGrVFLS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/EcSVS4oqwcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/j_llCGRCqp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <fieldset class="video">
+        <legend class="video__titulo">Videos De Recetas Destacadas</legend>
+        <iframe class="video__cont" width="560" height="315" src="https://www.youtube.com/embed/6ADNGrVFLS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video__cont" width="560" height="315" src="https://www.youtube.com/embed/EcSVS4oqwcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video__cont" width="560" height="315" src="https://www.youtube.com/embed/j_llCGRCqp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </fieldset>
 </section>
 
-<footer>
-    <hr>
+<footer class="pie">
+    <hr class="pie__linea">
     <section>
-        <img src= "" alt="Logo Footer">
-        <h3>Autor</h3>
+        <img class="pie__logo" src= "../images/pie-logo.jpg" alt="Logo Footer">
+        <h3 class="pie__autor">Damian Ullmann 2021</h3>
     </section>
 </footer>
 </body>

@@ -2,28 +2,37 @@
     margin:0;
     padding:0;
 }
+html{
+    height:100%;
+}
 body{
     background-image: url("../images/fondo.jpg");
     font-family: 'Roboto Light', sans-serif;
+    display:flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
-
-.test{
-    display: block;
+main{
+    margin: 1rem;
+}
+header{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .logo{
     width: 6em;
     height: 6em;
     float: left;
-    position:relative;
-    margin: 10px 15px 15px 10px;
+    position: sticky;
 }
 
 
 .barraNav{
-    display: inline-block;
+    display: inline-flex;
     float: left;
-    margin-top: 3em;
     margin-left: 5em;
 
 }
@@ -41,10 +50,12 @@ body{
     font-size: 25px;
 }
 
-.tituloIndex{
+.titulo{
+    margin-left: 40rem;
+}
+
+.titulo__texto{
     color: #4C2B0D;
-    margin-top: 7rem;
-    text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 50px;
@@ -52,12 +63,10 @@ body{
 }
 
 .articulos{
-    display: flex;
     margin-left: 8rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
     padding: 1rem;
-
 }
 .articulos__contenedor{
     display: inline-flex;
@@ -82,7 +91,8 @@ body{
     font-size: 20px;
 }
 .pie{
-
+    position: sticky;
+    top:100%;
 }
 .pie__linea{
     border-top: solid;
@@ -102,22 +112,41 @@ body{
     font-size: 20px;
 
 }
-
-
-
-
-
-
-
-
-
-p{
-    color: burlywood;
+.barraBuscar{
+    margin-top: 2rem;
+    margin-left: 11rem;
 }
-
-
-legend{
+.barraBuscar__contenedor{
+    align-items: center;
+    display: flex;
+}
+.barraBuscar__texto{
     font-size: 25px;
-    font-weight: bold;
+    margin-right: 1rem;
 }
-
+.barraBuscar__input{
+    height: 25px;
+    width: 25rem;
+    margin-right: 1rem;
+}
+.barraBuscar__boton{
+    text-align: center;
+    padding: 5px 1rem;
+    font-size: 15px;
+}
+.video{
+    margin:1rem;
+    border: solid;
+    border-color: #4C2B0D;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3rem;
+}
+.video__titulo{
+    font-size: 25px;
+    margin-left: 3rem;
+}
+.video__cont{
+    margin: 3rem 2rem;
+}

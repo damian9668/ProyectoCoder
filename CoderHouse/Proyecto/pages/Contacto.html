@@ -29,38 +29,45 @@
 
 <section>
     <form action="" method="POST" enctype="text/plain">
-        <fieldset>
-            <legend>Contactenos</legend>
-            <label>Motivo De Su Consulta</label>
-            <select name="Contacto">
-                <option value="Default">Seleccione Una</option>
-                <option value="Trabajar Con Nosostros">Trabajar Con Nosostros</option>
-                <option value="Sugerencias">Sugerencias</option>
-                <option value="Reportar Errores">Reportar Errores</option>
-                <option value="Otra">Otra</option>
-            </select>
-            <br><br>
-            <section>
-                <table>
-                    <caption>Informacion De Contacto</caption>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Telefono</th>
-                        <th>Email</th>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="Nombre" placeholder="Nombre"></td>
-                        <td><input type="text" name="Apellido" placeholder="Apellido"></td>
-                        <td><input type="text" name="Telefono" placeholder="Telefono"></td>
-                        <td><input type="email" name="Email" placeholder="Email"></td>
-                    </tr>
-                </table>
-            </section>
-            <br><br>
-            <label><input type="checkbox" id="cbox1" value="Acepta Condiciones"> Acepta ser contactado por nuestro personal</label><br>
-            <input type="reset" Value="Resetear Informacion">
-            <input type="submit" value="Enviar">
+        <fieldset class="contacto">
+            <legend class="contacto__titulo">Contactenos</legend>
+            <div class="contacto__contenedor">
+                <div class="contacto__opciones">
+                    <label class="contacto__opciones--label">Motivo De Su Consulta:</label>
+                    <select class="contacto__opciones--selector" name="Contacto">
+                        <option value="Default">Seleccione Una</option>
+                        <option value="Trabajar Con Nosostros">Trabajar Con Nosostros</option>
+                        <option value="Sugerencias">Sugerencias</option>
+                        <option value="Reportar Errores">Reportar Errores</option>
+                        <option value="Otra">Otra</option>
+                    </select>
+                </div>
+                <section>
+                    <table class="contacto__table">
+                        <caption class="contacto__table--titulo">Informacion De Contacto</caption>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="Nombre" placeholder="Nombre" class="contacto__table--input"></td>
+                            <td><input type="text" name="Apellido" placeholder="Apellido" class="contacto__table--input"></td>
+                            <td><input type="text" name="Telefono" placeholder="Telefono" class="contacto__table--input"></td>
+                            <td><input type="email" name="Email" placeholder="Email" class="contacto__table--email"></td>
+                        </tr>
+                    </table>
+                </section>
+                <br><br>
+                <label><input type="checkbox" id="cbox1" value="Acepta Condiciones"> Acepta ser contactado por nuestro personal</label><br>
+                <div class="contacto__botones">
+                    <input type="reset" Value="Resetear Informacion" class="contacto__botones--reset">
+                    <input type="submit" value="Enviar" class="contacto__botones--enviar">
+                </div>
+            </div>
+
+
 
         </fieldset>
     </form>

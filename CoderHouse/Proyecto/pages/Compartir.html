@@ -29,23 +29,35 @@
 
 <Section>
     <form action="" method="POST" enctype="text/plain">
-        <fieldset>
-            <legend>Compartinos Tu Receta</legend>
-            <p>Seleccione Una Categoria</p>
-            <select name="Categorias">
-                <option value="Pastas">Pastas</option>
-                <option value="Carnes">Carnes</option>
-                <option value="Ensaladas">Ensaladas</option>
-                <option value="Postres">Postres</option>
-                <option value="Otra">Otra</option>
-            </select>
-            <br>
-            <p>Ingrese Los Ingredientes:</p>
-            <textarea></textarea>
-            <br>
-            <p>Ingrese Los Pasos a Seguir</p>
-            <textarea></textarea>
+        <fieldset class="compartir">
+            <legend class="compartir__titulo">Compartinos Tu Receta</legend>
+            <table class="compartir__tabla">
+                <caption></caption>
+                <tr>
+                    <th class="compartir__tabla--nombres">Categoria</th>
+                    <th class="compartir__tabla--nombres">Ingredientes</th>
+                    <th class="compartir__tabla--nombres">Pasos</th>
 
+                </tr>
+                <tr>
+                    <td class="compartir__columnas--boton">
+                        <select name="Categorias">
+                            <option value="Pastas">Pastas</option>
+                            <option value="Carnes">Carnes</option>
+                            <option value="Ensaladas">Ensaladas</option>
+                            <option value="Postres">Postres</option>
+                            <option value="Otra">Otra</option>
+                         </select>
+                    </td>
+                    <td><textarea class="compartir__columnas--text"></textarea></td>
+                    <td><textarea class="compartir__columnas--text"></textarea></td>
+
+                </tr>
+            </table>
+            <div class="compartir__botones">
+                <input type="reset" Value="Resetear" class="compartir__botones--reset">
+                <input type="submit" value="Enviar" class="compartir__botones--enviar">
+            </div>
         </fieldset>
     </form>
 </Section>

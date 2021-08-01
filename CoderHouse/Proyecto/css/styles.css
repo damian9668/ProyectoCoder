@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url("../images/fondo.jpg");
+    font-family: 'Roboto Light', sans-serif;
+}
+
+.test{
+    display: block;
+}
+
+.logo{
+    width: 6em;
+    height: 6em;
+    float: left;
+    position:relative;
+    margin: 10px 15px 15px 10px;
+}
+
+
+.barraNav{
+    display: inline-block;
+    float: left;
+    margin-top: 3em;
+    margin-left: 5em;
+
+}
+
+.barraNav__lista{
+    list-style:none;
+    display: inline-flex;
+    text-align: center;
+    column-gap: 1em;
+}
+
+.barraNav__textoNav{
+    color: #4C2B0D;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.tituloIndex{
+    color: #4C2B0D;
+    margin-top: 7rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 50px;
+
+}
+
+.articulos{
+    display: flex;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+
+}
+.articulos__contenedor{
+    display: inline-flex;
+    margin: 2rem 12rem ;
+}
+.articulos__titulos{
+    margin-bottom: 2rem;
+    font-size: 30px;
+}
+.articulos__imagenes{
+    width: 18rem;
+    height: 16rem;
+}
+.articulos__contenido{
+    text-align: center;
+    margin-right: 8rem;
+
+}
+.articulos__texto{
+    color: #4C2B0D;
+    text-align: justify;
+    font-size: 20px;
+}
+.pie{
+
+}
+.pie__linea{
+    border-top: solid;
+    border-top-color: #4C2B0D;
+}
+.pie__logo{
+    width: 6rem;
+    height: 6rem;
+    padding: 1rem 2rem;
+    float:left;
+}
+.pie__autor{
+    display: inline;
+    float:left;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+p{
+    color: burlywood;
+}
+
+
+legend{
+    font-size: 25px;
+    font-weight: bold;
+}
+

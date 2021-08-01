@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header>
+    <a href="../index.html"><img class="logo" src= "../images/Logo.png" alt="logo"></a>
+    <nav>
+        <ul class="barraNav">
+            <li class="elementosNav"><a class="textoNav" href="../index.html">Inicio</a></li>
+            <li class="elementosNav"><a class="textoNav" href="../pages/Buscar.html">Buscar</a></li>
+            <li class="elementosNav"><a class="textoNav" href="../pages/Compartir.html">Compartir</a></li>
+            <li class="elementosNav"><a class="textoNav" href="../pages/Videos.html">Videos</a></li>
+            <li class="elementosNav"><a class="textoNav" href="../pages/Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+<hr>
+</header>
+
+<section>
+    <form action="" method="POST" enctype="text/plain">
+        <fieldset>
+            <legend>Contactenos</legend>
+            <label>Motivo De Su Consulta</label>
+            <select name="Contacto">
+                <option value="Default">Seleccione Una</option>
+                <option value="Trabajar Con Nosostros">Trabajar Con Nosostros</option>
+                <option value="Sugerencias">Sugerencias</option>
+                <option value="Reportar Errores">Reportar Errores</option>
+                <option value="Otra">Otra</option>
+            </select>
+            <br><br>
+            <section>
+                <table cellspacing="10" cellpadding="10" border="1">
+                    <caption>Informacion De Contacto</caption>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Telefono</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Nombre" placeholder="Nombre"></td>
+                        <td><input type="text" name="Apellido" placeholder="Apellido"></td>
+                        <td><input type="text" name="Telefono" placeholder="Telefono"></td>
+                        <td><input type="email" name="Email" placeholder="Email"></td>
+                    </tr>
+                </table>
+            </section>
+            <br><br>
+            <label><input type="checkbox" id="cbox1" value="Acepta Condiciones"> Acepta ser contactado por nuestro personal</label><br>
+            <input type="reset" Value="Resetear Informacion">
+            <input type="submit" value="Enviar">
+
+        </fieldset>
+    </form>
+</section>
+
+<footer>
+    <hr>
+    <section>
+        <img src= "" alt="Logo Footer">
+        <h3>Autor</h3>
+    </section>
+</footer>
+</body>
+</html>

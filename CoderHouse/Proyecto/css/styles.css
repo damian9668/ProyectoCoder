@@ -150,6 +150,53 @@ header{
 .video__cont{
     margin: 3rem 2rem;
 }
+.videoGrid{
+    display: grid;
+    grid-template-areas:
+    "vi1 t1"
+    "vi2 t2"
+    "vi3 t3";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px 500px;
+    width:100%;
+    justify-items: center;
+
+}
+.videoGrid__contenido{
+    width: 500px;
+
+}
+.videoGrid__contenido--titulo{
+    margin-top: 42px;
+    font-size: 30px;
+}
+.videoGrid__contenido--lista{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 15px;
+    font-size: 22px;
+
+}
+
+#item1{
+    grid-area: vi1;
+}
+#item2{
+    grid-area: t1
+}
+#item3{
+    grid-area: vi2;
+}
+#item4{
+    grid-area: t2;
+}
+#item5{
+    grid-area: vi3;
+}
+#item6{
+    grid-area: t3;
+}
 .contacto{
     display: flex;
     flex-direction: column;

@@ -13,7 +13,7 @@
 <body>
 <header> <!--comienza bloque header-->
     <div>
-        <a href="../index.html"><img class="logo" src= "../images/Logo.png" alt="logo"></a>
+        <a href="../index.html"><img class="logo" src="../images/Logo.png" alt="logo"></a>
     </div>
 
     <nav class="barraNav"> <!--BLoque-->
@@ -30,16 +30,87 @@
 <section> <!--comienza bloque principal-->
     <fieldset class="video">
         <legend class="video__titulo">Videos De Recetas Destacadas</legend>
-        <iframe class="video__cont" width="560" height="315" src="https://www.youtube.com/embed/6ADNGrVFLS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video__cont" width="560" height="315" src="https://www.youtube.com/embed/EcSVS4oqwcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video__cont" width="560" height="315" src="https://www.youtube.com/embed/j_llCGRCqp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="videoGrid">
+
+            <div id="item1" class="videoGrid__contenido">
+                <iframe class="video__cont" width="560" height="315" src="https://www.youtube.com/embed/6ADNGrVFLS8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+
+            <div id="item2" class="videoGrid__contenido">
+                <h2 class="videoGrid__contenido--titulo">Ingredientes</h2>
+               <ul class="videoGrid__contenido--lista">
+                   <li>750 g de carne picada (cerdo y ternera)</li>
+                   <li>24 placas de canelón o 12 de lasaña</li>
+                   <li>350 g de salsa de tomate casera</li>
+                   <li>200 ml de vino blanco (1 vaso)</li>
+                   <li>1 cebolla</li>
+                   <li>200 g de queso en lonchas</li>
+                   <li>100 g de queso rallado para gratinar</li>
+                   <li>Sal, pimienta, aceite de oliva</li>
+                   <li>Para la bechamel: 400 ml de leche, 25 g de mantequilla, 25 g de harina de trigo común,sal,</li>
+                   <li>pimienta y nuez moscada</li>
+               </ul>
+            </div>
+
+            <div id="item3" class="videoGrid__contenido">
+                <iframe class="video__cont" width="560" height="315" src="https://www.youtube.com/embed/EcSVS4oqwcI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+
+            <div id="item4" class="videoGrid__contenido">
+                <h2 class="videoGrid__contenido--titulo">Ingredientes</h2>
+                <ul class="videoGrid__contenido--lista">
+                    <li>800g de carne de ternera</li>
+                    <li>1 cebolla</li>
+                    <li>2 dientes de ajo</li>
+                    <li>2 zanahorias</li>
+                    <li>3 patatas</li>
+                    <li>200g de tomate triturado</li>
+                    <li>200ml de vino tinto</li>
+                    <li>200ml de caldo</li>
+                    <li>1 cucharadita de tomillo</li>
+                    <li>sal y pimienta</li>
+                    <li>aceite de oliva</li>
+                </ul>
+            </div>
+
+            <div id="item5" class="videoGrid__contenido">
+                <iframe class="video__cont" width="560" height="315" src="https://www.youtube.com/embed/j_llCGRCqp8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+
+            <div id="item6" class="videoGrid__contenido">
+                <h2 class="videoGrid__contenido--titulo">Ingredientes</h2>
+                <ul class="videoGrid__contenido--lista">
+                    <li>30 placas de canelón</li>
+                    <li>150 g de queso rallado</li>
+                    <li>800 g de pollo</li>
+                    <li>1 vaso de vino blanco</li>
+                    <li>1 cebolla</li>
+                    <li>2 hojas de laurel</li>
+                    <li>2 dientes de ajo</li>
+                    <li>Sal, pimienta y aceite de oliva</li>
+                    <li>500 ml de leche</li>
+                    <li>40 g de mantequilla</li>
+                    <li>1 cucharada colmada de harina (40g)</li>
+                </ul>
+            </div>
+
+        </div>
     </fieldset>
 </section> <!--termina bloque principal-->
 
 <footer class="pie"> <!--comienza bloque footer-->
     <hr class="pie__linea">
     <section>
-        <img class="pie__logo" src= "../images/pie-logo.jpg" alt="Logo Footer">
+        <img class="pie__logo" src="../images/pie-logo.jpg" alt="Logo Footer">
         <h3 class="pie__autor">Damian Ullmann 2021</h3>
     </section>
 </footer> <!--termina bloque footer-->

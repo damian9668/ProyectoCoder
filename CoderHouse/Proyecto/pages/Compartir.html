@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Compartir</title>
     <link rel="stylesheet" href="../css/styles.css">
 
@@ -31,28 +32,29 @@
     <form action="" method="POST" enctype="text/plain">
         <fieldset class="compartir">
             <legend class="compartir__titulo">Compartinos Tu Receta</legend>
-            <table class="compartir__tabla">
-                <caption></caption>
-                <tr>
-                    <th class="compartir__tabla--nombres">Categoria</th>
-                    <th class="compartir__tabla--nombres">Ingredientes</th>
-                    <th class="compartir__tabla--nombres">Pasos</th>
-                </tr>
-                <tr>
-                    <td class="compartir__columnas--boton"> <!-- Comienza primer campo tabla-->
-                        <select name="Categorias">
-                            <option value="Default">Seleccione Una</option>
-                            <option value="Pastas">Pastas</option>
-                            <option value="Carnes">Carnes</option>
-                            <option value="Ensaladas">Ensaladas</option>
-                            <option value="Postres">Postres</option>
-                            <option value="Otra">Otra</option>
-                         </select>
-                    </td> <!-- Fin primer campo tabla-->
-                    <td><textarea class="compartir__columnas--text"></textarea></td>
-                    <td><textarea class="compartir__columnas--text"></textarea></td>
-                </tr>
-            </table>
+            <div class="compartir__contenedor">
+                <div class="compartir__contenedor--contenido">
+                    <h2 class="compartir__contenedor--titulos">Seleccione Una Opcion</h2>
+                    <select name="Categorias">
+                        <option value="Default">Seleccione Una</option>
+                        <option value="Pastas">Pastas</option>
+                        <option value="Carnes">Carnes</option>
+                        <option value="Ensaladas">Ensaladas</option>
+                        <option value="Postres">Postres</option>
+                        <option value="Otra">Otra</option>
+                    </select>
+                </div>
+                <div class="compartir__contenedor--contenido">
+                    <h2 class="compartir__contenedor--titulos">Ingredientes</h2>
+                    <textarea class="compartir__contenedor--texto"></textarea>
+                </div>
+                <div class="compartir__contenedor--contenido">
+                    <h2 class="compartir__contenedor--titulos">Pasos</h2>
+                    <textarea class="compartir__contenedor--texto"></textarea>
+                </div>
+            </div>
+
+
             <div class="compartir__botones">
                 <input type="reset" Value="Resetear" class="compartir__botones--reset">
                 <input type="submit" value="Enviar" class="compartir__botones--enviar">
@@ -60,13 +62,5 @@
         </fieldset>
     </form>
 </Section> <!--termina bloque principal-->
-
-<footer class="pie"> <!--comienza bloque footer-->
-    <hr class="pie__linea">
-    <section class="pie__contenido">
-        <img class="pie__logo" src= "../images/pie-logo.jpg" alt="Logo Footer">
-        <h3 class="pie__autor">Damian Ullmann 2021</h3>
-    </section>
-</footer> <!--termina bloque footer-->
 </body>
 </html>

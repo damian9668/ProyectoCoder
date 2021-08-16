@@ -117,13 +117,6 @@ header{
     border-radius: 10px;
 
 }
-
-@media screen and (max-width: 480px) {
-    .articulos__contenedor{
-        flex-direction: column;
-    }
-
-}
 .articulos__texto{
     color: #4C2B0D;
     text-align: center;
@@ -132,42 +125,10 @@ header{
     width:85%;
     margin-bottom: 1rem;
 }
-.pie{
-    display: flex;
-    flex-direction: column;
-    flex:1 0 auto;
-    justify-content: flex-end;
-    height: 150px;
-}
-@media screen and (max-width: 480px){
-    .pie{
-        height: 400px;
-    }
-}
-.pie__linea{
-    border-top: solid;
-    border-top-color: #4C2B0D;
-}
-.pie__contenido{
-    display: flex;
-    align-items: center;
-}
-.pie__logo{
-    margin-top: 2vh;
-    margin-left: 1vw;
-    margin-bottom: 1vh;
-    width: 6em;
-    height: 6em;
-
-}
-.pie__autor{
-    display: inline-flex;
-    margin-left: 6vw;
-    margin-top: 2vh;
-}
 .barraBuscar{
-    margin-top: 2rem;
-    margin-left: 11rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
 }
 .barraBuscar__contenedor{
     align-items: center;
@@ -257,7 +218,6 @@ header{
     padding-left:10rem;
     border: solid;
     border-color: #4C2B0D;
-    margin: 1rem;
     margin: 3rem 20rem;
 }
 .contacto__titulo{
@@ -308,37 +268,42 @@ header{
 }
 .compartir{
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding-left:10rem;
+    align-items: center;
     border: solid;
     border-color: #4C2B0D;
-    margin: 1rem;
     margin: 3rem 10rem;
+    flex-direction: column;
+
 
 }
 .compartir__titulo{
-    margin-left: -7rem;
     font-size: 25px;
+    margin-left: 10px;
 }
-.compartir__tabla{
-    margin-top: 3rem;
-    margin-left: 10rem;
-    margin-bottom: 3rem;
+.compartir__contenedor{
+    display: flex;
+    flex-direction: row;
 }
-.compartir__columnas--text{
-    margin: 1rem 3rem;
-    width: 20rem;
-    height: 15rem;
+.compartir__contenedor--contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+.compartir__contenedor--titulos{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.compartir__contenedor--texto{
+    height: 20vh;
+    width: 20vw;
     resize: none;
-
-}
-.compartir__tabla--nombres{
-    font-size: 25px;
 }
 .compartir__botones{
     margin-bottom: 2rem;
-    margin-left: 9rem;
+    display: flex;
+    flex-direction: row;
+
 }
 .compartir__botones--enviar{
     text-align: center;
@@ -353,3 +318,19 @@ header{
     margin-top: 1rem;
     margin-right: 1rem;
 }
+@media screen and (max-width: 800px) {
+    .articulos__contenedor {
+        flex-direction: column;
+    }
+    .compartir{
+        margin: 3rem 5rem;
+    }
+    .compartir__contenedor{
+        flex-direction: column;
+    }
+    .compartir__contenedor--texto{
+        width: 72vw;
+    }
+}
+
+

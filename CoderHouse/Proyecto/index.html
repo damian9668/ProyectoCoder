@@ -2,19 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Recetas De Cocina</title>
     <link rel="stylesheet" href="css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <header> <!--comienza bloque header-->
-        <div>
-            <a href="index.html"><img class="logo" src= "images/Logo.png" alt="logo"></a>
-        </div>
+<header> <!--comienza bloque header-->
+    <div class="wrapper">
+        <a href="index.html"><img class="logo" src="images/Logo.png" alt="logo"></a>
 
         <nav class="barraNav"> <!--BLoque-->
             <ul class="barraNav__lista"> <!--Elemento-->
@@ -25,40 +25,50 @@
                 <li><a class="barraNav__textoNav" href="pages/Contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header><!--termina bloque header-->
+    </div>
+</header><!--termina bloque header-->
 
-    <main class="articulos"> <!--Comienza bloque main-->
-        <div class="titulo">
-            <h1 class="titulo__texto">DESTACADAS</h1>
-        </div>
-        <div class="articulos__contenedor" >
+<main class="articulos"> <!--Comienza bloque main-->
+    <div class="titulo">
+        <h1 class="titulo__texto">DESTACADAS</h1>
+    </div>
+    <div class="articulos__contenedor">
 
-            <article class="articulos__contenido">
+        <article class="articulos__contenido">
+            <div class="articulos__contenido2">
                 <h2 class="articulos__titulos">Brochetas</h2>
                 <img class="articulos__imagenes" src="images/brochetas.jpg" alt="img1">
-                <p class="articulos__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor eligendi possimus quae quasi quos sed soluta, temporibus tenetur vero!</p>
-            </article>
+                <p class="articulos__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor
+                    eligendi possimus quae quasi quos sed soluta, temporibus tenetur vero!</p>
+            </div>
+        </article>
 
-            <article class="articulos__contenido">
+        <article class="articulos__contenido">
+            <div class="articulos__contenido2">
                 <h2 class="articulos__titulos">Fondue</h2>
                 <img class="articulos__imagenes" src="images/fondue.jpg" alt="img2">
-                <p class="articulos__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto distinctio reprehenderit saepe? Dolores eaque est impedit nisi sint soluta voluptate.</p>
-            </article>
+                <p class="articulos__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor
+                    eligendi possimus quae quasi quos sed soluta, temporibus tenetur vero!</p>
+            </div>
+        </article>
 
-            <article class="articulos__contenido">
+        <article class="articulos__contenido">
+            <div class="articulos__contenido2">
                 <h2 class="articulos__titulos">Flan</h2>
                 <img class="articulos__imagenes" src="images/flan.jpg" alt="img3">
-                <p class="articulos__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt distinctio eaque eius, excepturi ipsam itaque nam quae quas quia voluptatem?</p>
-            </article>
-        </div>
-    </main> <!--termina bloque main-->
+                <p class="articulos__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor
+                    eligendi possimus quae quasi quos sed soluta, temporibus tenetur vero!</p>
+            </div>
+        </article>
+    </div>
+</main> <!--termina bloque main-->
 
-    <footer class="pie"><!--comienza bloque footer-->
-        <hr class="pie__linea">
-        <section>
-            <img class="pie__logo" src= "images/pie-logo.jpg" alt="Logo Footer">
-            <h3 class="pie__autor">Damian Ullmann 2021</h3>
-        </section>
-    </footer><!--termina bloque footer-->
+<footer class="pie"><!--comienza bloque footer-->
+    <hr class="pie__linea">
+    <section class="pie__contenido">
+        <img class="pie__logo" src="images/pie-logo.jpg" alt="Logo Footer">
+        <h3 class="pie__autor">Damian Ullmann 2021</h3>
+    </section>
+</footer><!--termina bloque footer-->
 </body>
 </html>

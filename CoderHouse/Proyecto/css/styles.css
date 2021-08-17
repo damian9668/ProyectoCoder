@@ -156,6 +156,7 @@ header{
     flex-direction: row;
     align-items: center;
     margin-top: 3rem;
+    padding-bottom: 3rem;
 }
 .video__titulo{
     font-size: 25px;
@@ -167,13 +168,14 @@ header{
 .videoGrid{
     display: grid;
     grid-template-areas:
-    "vi1 t1"
-    "vi2 t2"
-    "vi3 t3";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 500px 500px 500px;
-    width:100%;
+        "vi1 t1"
+        "vi2 t2"
+        "vi3 t3";
+    width: 100%;
     justify-items: center;
+    gap: 4rem;
+    grid-auto-rows: 23rem;
+    grid-template-columns: repeat(auto-fill, minmax(39rem, 1fr));
 
 }
 .videoGrid__contenido{
@@ -318,7 +320,7 @@ header{
     margin-top: 1rem;
     margin-right: 1rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     .articulos__contenedor {
         flex-direction: column;
     }
@@ -330,6 +332,30 @@ header{
     }
     .compartir__contenedor--texto{
         width: 72vw;
+    }
+    .videoGrid{
+        display: grid;
+        grid-template-areas:
+        "vi1"
+        "t1"
+        "vi2"
+        "t2"
+        "vi3"
+        "t3";
+        width: 100%;
+        justify-items: center;
+        gap: 0rem;
+        grid-auto-rows: 26rem;
+        grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+        justify-content: center;
+
+    }
+    .videoGrid__contenido{
+        width: 607px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
     }
 }
 

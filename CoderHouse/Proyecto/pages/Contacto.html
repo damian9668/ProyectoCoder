@@ -43,27 +43,32 @@
                         <option value="Otra">Otra</option>
                     </select>
                 </div>
-                <section>
-                    <table class="contacto__table">
-                        <caption class="contacto__table--titulo">Informacion De Contacto</caption>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Telefono</th>
-                            <th>Email</th>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="Nombre" placeholder="Nombre" class="contacto__table--input"></td>
-                            <td><input type="text" name="Apellido" placeholder="Apellido" class="contacto__table--input"></td>
-                            <td><input type="text" name="Telefono" placeholder="Telefono" class="contacto__table--input"></td>
-                            <td><input type="email" name="Email" placeholder="Email" class="contacto__table--email"></td>
-                        </tr>
-                    </table>
+                <section class="contacto__seccion">
+                   <label class="contacto__titulo2">Información De Contacto</label>
+                    <div class="contacto__contenedor2">
+                        <div class="contacto__titulo2--input">
+                            <h4 class="contacto__titulo2--nombre">Nombre</h4>
+                            <input type="text" placeholder="Nombre">
+                        </div>
+                        <div class="contacto__titulo2--input">
+                            <h4 class="contacto__titulo2--nombre">Apellido</h4>
+                            <input type="text" placeholder="Apellido">
+                        </div>
+                        <div class="contacto__titulo2--input">
+                            <h4 class="contacto__titulo2--nombre">Teléfono</h4>
+                            <input type="text" placeholder="Teléfono">
+                        </div>
+                        <div class="contacto__titulo2--input">
+                            <h4 class="contacto__titulo2--nombre">Email</h4>
+                            <input type="email" placeholder="Email">
+                        </div>
+                    </div>
+
                 </section>
                 <br><br>
-                <label><input type="checkbox" id="cbox1" value="Acepta Condiciones"> Acepta ser contactado por nuestro personal</label><br>
+                <label class="contacto__caja"><input type="checkbox" id="cbox1" value="Acepta Condiciones"> Acepta ser contactado por nuestro personal</label><br>
                 <div class="contacto__botones">
-                    <input type="reset" Value="Resetear Informacion" class="contacto__botones--reset">
+                    <input type="reset" Value="Resetear Información" class="contacto__botones--reset">
                     <input type="submit" value="Enviar" class="contacto__botones--enviar">
                 </div>
             </div>

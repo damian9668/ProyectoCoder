@@ -51,6 +51,10 @@ header{
     text-align: center;
     column-gap: 1em;
 }
+.barraNav__lista > li:hover{
+    transition: 0.3s;
+    transform: scale(1.15,1.15);
+}
 
 .barraNav__textoNav{
     color: #4C2B0D;
@@ -60,6 +64,7 @@ header{
 .barraNav__textoNav:hover{
     text-decoration: underline;
     text-decoration-color: chocolate;
+
 }
 
 .titulo{
@@ -107,6 +112,10 @@ header{
     padding: 10px;
     flex-basis: 100%;
 
+}
+.articulos__contenido:hover {
+    transition: 1s;
+    flex-basis: 120%;
 }
 
 .articulos__contenido2 {

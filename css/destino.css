@@ -10,6 +10,9 @@ h1 {
 h2 {
   color: #473c1f; }
 
+.tituloRecetas {
+  margin-bottom: 2rem; }
+
 .tituloIndex {
   margin-bottom: 5rem; }
 
@@ -23,10 +26,22 @@ h2 {
 .titulosCartas {
   margin: 1rem 0rem; }
 
+.contenedor {
+  width: 75%; }
+
+.contenedorTexto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 @media screen and (max-width: 991px) {
   .cartas {
     flex-direction: column; }
   .card {
     margin-bottom: 2rem;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .contenedorPadre {
+    flex-direction: column; }
+  .contenedor {
+    margin: 0 auto; } }

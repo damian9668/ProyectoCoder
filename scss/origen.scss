@@ -1,5 +1,6 @@
 $color1:#4C2B0D;
 $color2:#473c1f;
+$tamTitulos: 2rem;
 
 body {
   background-image: url("../images/fondo.jpg");
@@ -12,6 +13,9 @@ h1{
 }
 h2{
   color:$color2;
+}
+.tituloRecetas{
+  margin-bottom: 2rem;
 }
 .tituloIndex{
   margin-bottom: 5rem;
@@ -26,6 +30,15 @@ h2{
 .titulosCartas{
   margin: 1rem 0rem;
 }
+.contenedor {
+  width: 75%;
+}
+.contenedorTexto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-width: 991px) {
   .cartas {
     flex-direction: column;
@@ -34,5 +47,11 @@ h2{
     margin-bottom: 2rem;
     margin-left:auto;
     margin-right: auto;
+  }
+  .contenedorPadre{
+    flex-direction: column;
+  }
+  .contenedor{
+    margin: 0 auto;
   }
 }

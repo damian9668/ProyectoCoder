@@ -52,15 +52,25 @@ textarea{
   text-align: center;
   margin-bottom: 1vh;
 }
-.test{
+.espacioCompartir{
+  margin-top: 2vh;
+}
+.fotosCompartir{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.espacioCompartir{
+.contenedorContacto{
+  @extend .contenedorCompartir;
   margin-top: 2vh;
 }
+.selectorContacto{
+  @extend .selectorCompartir;
+  margin-top: 2vh;
+}
+
+
 
 @media screen and (max-width: 991px) {
   .cartas {

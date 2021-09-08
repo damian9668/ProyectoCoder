@@ -18,7 +18,8 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="../images/Logo.png" alt="" width="80" height="80"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -30,13 +31,15 @@
                         <a class="nav-link active" aria-current="page" href="../pages/Buscar.html"><h4>Buscar</h4></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/Compartir.html"><h4>Compartir</h4></a>
+                        <a class="nav-link active" aria-current="page" href="../pages/Compartir.html"><h4>Compartir</h4>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../pages/Videos.html"><h4>Videos</h4></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/Contacto.html"><h4>Contacto</h4></a>
+                        <a class="nav-link active" aria-current="page" href="../pages/Contacto.html"><h4>Contacto</h4>
+                        </a>
                     </li>
 
                 </ul>
@@ -47,49 +50,48 @@
 
 <section> <!--comienza bloque principal-->
     <form action="" method="POST" enctype="text/plain">
-        <fieldset class="contacto">
-            <legend class="contacto__titulo">Contactenos</legend>
-            <div class="contacto__contenedor">
-                <div class="contacto__opciones">
-                    <label class="contacto__opciones--label">Motivo De Su Consulta:</label>
-                    <select class="contacto__opciones--selector" name="Contacto">
-                        <option value="Default">Seleccione Una</option>
-                        <option value="Trabajar Con Nosostros">Trabajar Con Nosostros</option>
-                        <option value="Sugerencias">Sugerencias</option>
-                        <option value="Reportar Errores">Reportar Errores</option>
-                        <option value="Otra">Otra</option>
-                    </select>
-                </div>
-                <section class="contacto__seccion">
-                   <label class="contacto__titulo2">Información De Contacto</label>
-                    <div class="contacto__contenedor2">
-                        <div class="contacto__titulo2--input">
-                            <h4 class="contacto__titulo2--nombre">Nombre</h4>
-                            <input type="text" placeholder="Nombre">
-                        </div>
-                        <div class="contacto__titulo2--input">
-                            <h4 class="contacto__titulo2--nombre">Apellido</h4>
-                            <input type="text" placeholder="Apellido">
-                        </div>
-                        <div class="contacto__titulo2--input">
-                            <h4 class="contacto__titulo2--nombre">Teléfono</h4>
-                            <input type="text" placeholder="Teléfono">
-                        </div>
-                        <div class="contacto__titulo2--input">
-                            <h4 class="contacto__titulo2--nombre">Email</h4>
-                            <input type="email" placeholder="Email">
-                        </div>
-                    </div>
 
-                </section>
-                <br><br>
-                <label class="contacto__caja"><input type="checkbox" id="cbox1" value="Acepta Condiciones"> Acepta ser contactado por nuestro personal</label><br>
-                <div class="contacto__botones">
-                    <input type="reset" Value="Resetear Información" class="contacto__botones--reset">
-                    <input type="submit" value="Enviar" class="contacto__botones--enviar">
-                </div>
+        <h1 class="text-center">CONTACTENOS</h1>
+        <div class="selectorContacto">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Motivo De Su Consulta</label>
             </div>
-        </fieldset>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Seleccione Una</option>
+                <option value="Trabajar">Trabajar Con Nosotros</option>
+                <option value="Sugerencias">Sugerencias</option>
+                <option value="Errores">Reportar Errores</option>
+                <option value="Otra">Otra</option>
+            </select>
+        </div>
+        <div>
+            <div class="contenedorContacto">
+                <h4>Nombre</h4>
+                <input type="text" placeholder="Nombre">
+            </div>
+            <div class="contenedorContacto">
+                <h4>Apellido</h4>
+                <input type="text" placeholder="Apellido">
+            </div>
+            <div class="contenedorContacto">
+                <h4>Teléfono</h4>
+                <input type="text" placeholder="Teléfono">
+            </div>
+            <div class="contenedorContacto">
+                <h4>Email</h4>
+                <input type="email" placeholder="Email">
+            </div>
+        </div>
+
+        <div class="contenedorContacto">
+            <input type="checkbox" id="cbox1" value="Acepta Condiciones">
+                Acepta ser contactado por nuestro personal
+        </div>
+
+        <div class="contenedorContacto">
+            <input type="reset" Value="Resetear Información">
+            <input type="submit" value="Enviar">
+        </div>
     </form>
 </section> <!--termina bloque principal-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

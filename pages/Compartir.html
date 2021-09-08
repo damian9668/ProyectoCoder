@@ -47,13 +47,13 @@
 
 <Section> <!--comienza bloque principal-->
     <form action="" method="POST" enctype="text/plain">
-        <fieldset class="compartir">
-            <legend class="compartir__titulo">Compartinos Tu Receta</legend>
-            <div class="compartir__contenedor">
-                <div class="compartir__contenedor--contenido">
-                    <h2 class="compartir__contenedor--titulos">Seleccione Una Opción</h2>
-                    <select name="Categorias">
-                        <option value="Default">Seleccione Una</option>
+            <h1 class="text-center">COMPARTINOS TU RECETA</h1>
+                <div class="selectorCompartir espacioCompartir">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Categorias</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Seleccione Una</option>
                         <option value="Pastas">Pastas</option>
                         <option value="Carnes">Carnes</option>
                         <option value="Ensaladas">Ensaladas</option>
@@ -61,22 +61,25 @@
                         <option value="Otra">Otra</option>
                     </select>
                 </div>
-                <div class="compartir__contenedor--contenido">
-                    <h2 class="compartir__contenedor--titulos">Ingredientes</h2>
-                    <textarea class="compartir__contenedor--texto"></textarea>
-                </div>
-                <div class="compartir__contenedor--contenido">
-                    <h2 class="compartir__contenedor--titulos">Pasos</h2>
-                    <textarea class="compartir__contenedor--texto"></textarea>
-                </div>
-            </div>
 
+                <div class="contenedorCompartir espacioCompartir">
+                    <h2 >Ingredientes</h2>
+                    <textarea class="areaTexto"></textarea>
+                </div>
+                <div class="contenedorCompartir espacioCompartir">
+                    <h2>Pasos</h2>
+                    <textarea class="areaTexto"></textarea>
+                </div>
 
-            <div class="compartir__botones">
-                <input type="reset" Value="Resetear" class="compartir__botones--reset">
-                <input type="submit" value="Enviar" class="compartir__botones--enviar">
-            </div>
-        </fieldset>
+                <div class="test espacioCompartir">
+                    <h2 >Fotos</h2>
+                    <input type="file" id="exampleFormControlFile1">
+                </div>
+
+        <div class="contenedorCompartir espacioCompartir">
+            <input type="reset" Value="Resetear">
+            <input type="submit" value="Enviar">
+        </div>
     </form>
 </Section> <!--termina bloque principal-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

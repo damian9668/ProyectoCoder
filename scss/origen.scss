@@ -1,6 +1,7 @@
 $color1:#4C2B0D;
 $color2:#473c1f;
 $tamTitulos: 2rem;
+$tamTextarea: 10rem;
 
 body {
   background-image: url("../images/fondo.jpg");
@@ -13,6 +14,11 @@ h1{
 }
 h2{
   color:$color2;
+}
+textarea{
+  width: $tamTextarea*2;
+  height: $tamTextarea;
+  resize: none;
 }
 .tituloRecetas{
   margin-bottom: 2rem;
@@ -28,7 +34,7 @@ h2{
   background-color: cornsilk;
 }
 .titulosCartas{
-  margin: 1rem 0rem;
+  margin: 1rem 0;
 }
 .contenedor {
   width: 75%;
@@ -37,6 +43,23 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.selectorCompartir{
+  display: flex;
+  justify-content: center;
+}
+.contenedorCompartir{
+  text-align: center;
+  margin-bottom: 1vh;
+}
+.test{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.espacioCompartir{
+  margin-top: 2vh;
 }
 
 @media screen and (max-width: 991px) {

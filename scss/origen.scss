@@ -27,11 +27,12 @@ textarea{
   margin-bottom: 5rem;
 }
 .navbar{
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .card{
   border-radius: 10px;
   background-color: cornsilk;
+  width: 25rem !important;
 }
 .titulosCartas{
   margin: 1rem 0;
@@ -69,9 +70,14 @@ textarea{
   @extend .selectorCompartir;
   margin-top: 2vh;
 }
-
-
-
+.barraBuscar__contenedor{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.buscarForm{
+  display: flex;
+}
 @media screen and (max-width: 991px) {
   .cartas {
     flex-direction: column;

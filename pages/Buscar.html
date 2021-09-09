@@ -46,16 +46,14 @@
 </header><!--termina bloque header-->
 
 <div> <!--comienza bloque principal-->
-    <div class="barraBuscar__contenedor">
-        <nav class="navbar navbar-light bg-light d-flex justify-content-center ">
-            <form class="form-inline buscarForm">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-            </form>
-        </nav>
+    <div class="buscarBotones">
+        <a href="#1"><button type="button" class="btn btn-primary btn-lg">Carnes</button></a>
+        <a href="#2"><button type="button" class="btn btn-primary btn-lg">Pastas</button></a>
+        <a href="#3"><button type="button" class="btn btn-primary btn-lg">Ensaladas</button></a>
+        <a href="#4"><button type="button" class="btn btn-primary btn-lg">Postres</button></a>
     </div>
 
-    <h2 class="text-center">CARNES</h2>
+    <h2 id="1" class="titulosBuscar__secciones text-center">CARNES</h2>
     <div class="contenedorBuscar__Cartas"> <!--Comienza seccion carnes-->
         <div class="d-flex justify-content-around cartas">
             <div class="card">
@@ -166,7 +164,7 @@
         </div>
     </div><!--Termina Seccion Carnes-->
 
-    <h2 class="text-center">PASTAS</h2>
+    <h2 id="2" class="titulosBuscar__secciones text-center">PASTAS</h2>
     <div class="contenedorBuscar__cartas"> <!--Comienza seccion pastas-->
         <div class="d-flex justify-content-around cartas">
             <div class="card">
@@ -277,7 +275,7 @@
         </div>
     </div><!--Termina Seccion pastas-->
 
-    <h2 class="text-center">ENSALADAS</h2>
+    <h2 id="3" class="titulosBuscar__secciones text-center">ENSALADAS</h2>
     <div class="contenedorBuscar__cartas"> <!--Comienza seccion Ensaladas-->
         <div class="d-flex justify-content-around cartas">
             <div class="card">
@@ -388,7 +386,7 @@
         </div>
     </div><!--Termina Seccion Ensaladas-->
 
-    <h2 class="text-center">POSTRES</h2>
+    <h2 id="4" class="titulosBuscar__secciones text-center">POSTRES</h2>
     <div class="contenedorBuscar__cartas"> <!--Comienza seccion postres-->
         <div class="d-flex justify-content-around cartas">
             <div class="card">

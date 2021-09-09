@@ -20,6 +20,13 @@ textarea{
   height: $tamTextarea;
   resize: none;
 }
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+html{
+  scroll-behavior: smooth;
+}
 .tituloRecetas{
   margin-bottom: 2rem;
 }
@@ -70,14 +77,26 @@ textarea{
   @extend .selectorCompartir;
   margin-top: 2vh;
 }
-.barraBuscar__contenedor{
-  display: flex;
+.titulosBuscar__secciones{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.buscarBotones{
+  display:flex;
   justify-content: center;
-  margin: 0 auto;
 }
-.buscarForm{
-  display: flex;
+.btn{
+  margin: 1rem 0.5rem;
+  background-color: #e05410;
+  border-color: #e05410;
 }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #e05410;
+  border-color: #e05410;
+}
+
 @media screen and (max-width: 991px) {
   .cartas {
     flex-direction: column;
@@ -92,5 +111,24 @@ textarea{
   }
   .contenedor{
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 487px) {
+  .card {
+    width: 95% !important
+  }
+  .buscarBotones{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buscarBotones{
+    a{
+      width: 85%;
+      margin-left: -1rem;
+      button{
+        width: 100%;
+      }
+    }
   }
 }

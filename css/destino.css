@@ -15,6 +15,13 @@ textarea {
   height: 10rem;
   resize: none; }
 
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+html {
+  scroll-behavior: smooth; }
+
 .tituloRecetas {
   margin-bottom: 2rem; }
 
@@ -63,13 +70,23 @@ textarea {
 .selectorContacto {
   margin-top: 2vh; }
 
-.barraBuscar__contenedor {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto; }
+.titulosBuscar__secciones {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
-.buscarForm {
-  display: flex; }
+.buscarBotones {
+  display: flex;
+  justify-content: center; }
+
+.btn {
+  margin: 1rem 0.5rem;
+  background-color: #e05410;
+  border-color: #e05410; }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #e05410;
+  border-color: #e05410; }
 
 @media screen and (max-width: 991px) {
   .cartas {
@@ -82,3 +99,15 @@ textarea {
     flex-direction: column; }
   .contenedor {
     margin: 0 auto; } }
+
+@media screen and (max-width: 487px) {
+  .card {
+    width: 95% !important; }
+  .buscarBotones {
+    flex-direction: column;
+    align-items: center; }
+  .buscarBotones a {
+    width: 85%;
+    margin-left: -1rem; }
+    .buscarBotones a button {
+      width: 100%; } }

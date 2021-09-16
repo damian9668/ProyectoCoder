@@ -96,6 +96,14 @@ html{
   background-color: #e05410;
   border-color: #e05410;
 }
+.pie{
+  background-color: #db6930;
+  margin-top: 2rem;
+}
+.pieVideos{
+  background-color: #db6930;
+  margin-top: 13rem;
+}
 
 @media screen and (max-width: 991px) {
   .cartas {
@@ -111,6 +119,9 @@ html{
   }
   .contenedor{
     margin: 0 auto;
+  }
+  .pieVideos{
+    margin-top: 2rem;
   }
 }
 @media screen and (max-width: 487px) {

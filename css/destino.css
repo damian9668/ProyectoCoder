@@ -68,7 +68,9 @@ html {
   margin-top: 2vh; }
 
 .selectorContacto {
-  margin-top: 2vh; }
+  margin-top: 2vh;
+  --bs-body-font-size: 0.9rem
+; }
 
 .titulosBuscar__secciones {
   margin-top: 2rem;

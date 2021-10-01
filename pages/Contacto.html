@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="En este sitio web podrás dejarnos tus datos y nos pondremos en contacto contigo">
-    <meta name="keywords"  content="CONTACTO, SUGERENCIAS, RECOMENDACIONES, REPORTAR UN ERROR">
+    <meta name="keywords" content="CONTACTO, SUGERENCIAS, RECOMENDACIONES, REPORTAR UN ERROR">
     <title>Contacto</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
@@ -24,7 +25,8 @@
 <header> <!--comienza bloque header-->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../images/Logo.png" alt="logo" width="80" height="80"></a>
+            <a class="navbar-brand" href="../index.html"><img src="../images/Logo.png" alt="logo" width="80"
+                                                              height="80"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,60 +58,57 @@
 </header><!--termina bloque header-->
 
 <section> <!--comienza bloque principal-->
-    <form action="" method="POST" enctype="text/plain">
+    <form action="" method="POST" enctype="text/plain" class="formContacto">
 
-        <h1 class="text-center">CONTACTENOS</h1>
-        <div class="selectorContacto">
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Seleccione Una Consulta</option>
-                <option value="Trabajar">Trabajar Con Nosotros</option>
-                <option value="Sugerencias">Sugerencias</option>
-                <option value="Errores">Reportar Errores</option>
-                <option value="Otra">Otra</option>
-            </select>
-        </div>
-        <div>
-            <div class="contenedorContacto">
-                <h4>Nombre</h4>
-                <input type="text" placeholder="Nombre">
-            </div>
-            <div class="contenedorContacto">
-                <h4>Apellido</h4>
-                <input type="text" placeholder="Apellido">
-            </div>
-            <div class="contenedorContacto">
-                <h4>Teléfono</h4>
-                <input type="text" placeholder="Teléfono">
-            </div>
-            <div class="contenedorContacto">
-                <h4>Email</h4>
-                <input type="email" placeholder="Email">
-            </div>
-        </div>
+        <h1 class="text-center tituloContacto">CONTACTENOS</h1>
 
-        <div class="contenedorContacto">
-            <input type="checkbox" id="cbox1" value="Acepta Condiciones">
-                Acepta ser contactado por nuestro personal
-        </div>
+        <select class="form-select" id="inputGroupSelect01">
+            <option selected="">Seleccione Una Consulta</option>
+            <option value="Trabajar">Trabajar Con Nosotros</option>
+            <option value="Sugerencias">Sugerencias</option>
+            <option value="Errores">Reportar Errores</option>
+            <option value="Otra">Otra</option>
+        </select>
 
-        <div class="contenedorContacto">
-            <input type="reset" Value="Resetear Información">
-            <input type="submit" value="Enviar">
+        <div class="form-group">
+            <label for="usr">Nombre:</label>
+            <input type="text" class="form-control" id="usr">
         </div>
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control" id="apellido">
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" class="form-control" id="telefono">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Acepta ser contactado por nuestro personal</label>
+        </div>
+        <button type="reset" class="btn btn-default">Resetear Información</button>
+        <button type="submit" class="btn btn-default">Enviar</button>
     </form>
 </section> <!--termina bloque principal-->
 <footer class="text-center text-lg-start pie">
     <div class="container d-flex justify-content-center py-5">
-        <button type="button" onclick="window.location.href='https://www.facebook.com/ullmanndamian'" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <button type="button" onclick="window.location.href='https://www.facebook.com/ullmanndamian'"
+                class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
             <i class="fab fa-facebook-f"></i>
         </button>
-        <button type="button" onclick="window.location.href='https://www.youtube.com/channel/UC0Gt4VV0wjvzWNQ9qrfzaoQ'" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <button type="button" onclick="window.location.href='https://www.youtube.com/channel/UC0Gt4VV0wjvzWNQ9qrfzaoQ'"
+                class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
             <i class="fab fa-youtube"></i>
         </button>
-        <button type="button" onclick="window.location.href='https://www.instagram.com/damian.ullmann/?hl=es'" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <button type="button" onclick="window.location.href='https://www.instagram.com/damian.ullmann/?hl=es'"
+                class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
             <i class="fab fa-instagram"></i>
         </button>
-        <button type="button" onclick="window.location.href='https://twitter.com/UllmannDamian'" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <button type="button" onclick="window.location.href='https://twitter.com/UllmannDamian'"
+                class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
             <i class="fab fa-twitter"></i>
         </button>
     </div>
@@ -121,8 +120,8 @@
     </div>
     <!-- Copyright -->
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 </body>
 </html>

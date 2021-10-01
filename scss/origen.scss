@@ -90,6 +90,7 @@ html{
   margin: 1rem 0.5rem;
   background-color: #e05410;
   border-color: #e05410;
+  color:white;
 }
 
 .btn-primary:hover {
@@ -108,7 +109,16 @@ html{
 .custom-select{
   padding: 0.5rem;
 }
-
+.formContacto{
+  margin: 2rem 20rem;
+  margin-bottom: 4rem;
+}
+.tituloContacto{
+  margin-bottom: 1.5rem;
+}
+.formCompartir{
+  @extend .formContacto;
+}
 @media screen and (max-width: 991px) {
   .cartas {
     flex-direction: column;
@@ -127,10 +137,19 @@ html{
   .pieVideos{
     margin-top: 2rem;
   }
+  .formContacto{
+    margin: 2rem 1rem;
+  }
+  .formCompartir{
+    margin:2rem 6rem;
+  }
 }
 @media screen and (max-width: 487px) {
   .card {
     width: 95% !important
+  }
+  .formCompartir{
+    margin:2rem 4rem;
   }
   .buscarBotones{
     flex-direction: column;

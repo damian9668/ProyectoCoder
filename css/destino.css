@@ -83,7 +83,8 @@ html {
 .btn {
   margin: 1rem 0.5rem;
   background-color: #e05410;
-  border-color: #e05410; }
+  border-color: #e05410;
+  color: white; }
 
 .btn-primary:hover {
   color: #fff;
@@ -101,6 +102,13 @@ html {
 .custom-select {
   padding: 0.5rem; }
 
+.formContacto, .formCompartir {
+  margin: 2rem 20rem;
+  margin-bottom: 4rem; }
+
+.tituloContacto {
+  margin-bottom: 1.5rem; }
+
 @media screen and (max-width: 991px) {
   .cartas {
     flex-direction: column; }
@@ -113,11 +121,17 @@ html {
   .contenedor {
     margin: 0 auto; }
   .pieVideos {
-    margin-top: 2rem; } }
+    margin-top: 2rem; }
+  .formContacto, .formCompartir {
+    margin: 2rem 1rem; }
+  .formCompartir {
+    margin: 2rem 6rem; } }
 
 @media screen and (max-width: 487px) {
   .card {
     width: 95% !important; }
+  .formCompartir {
+    margin: 2rem 4rem; }
   .buscarBotones {
     flex-direction: column;
     align-items: center; }

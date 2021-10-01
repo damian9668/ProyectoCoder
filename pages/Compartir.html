@@ -53,10 +53,10 @@
 </header><!--termina bloque header-->
 
 <Section> <!--comienza bloque principal-->
-    <form action="" method="POST" enctype="text/plain">
+    <form action="" method="POST" enctype="text/plain" class="formCompartir">
             <h1 class="text-center">COMPARTINOS TU RECETA</h1>
                 <div class="selectorCompartir espacioCompartir">
-                    <select class="custom-select" id="inputGroupSelect01">
+                    <select class="form-select" id="inputGroupSelect01">
                         <option selected>Seleccione Una Categoria</option>
                         <option value="Pastas">Pastas</option>
                         <option value="Carnes">Carnes</option>
@@ -68,22 +68,24 @@
 
                 <div class="contenedorCompartir espacioCompartir">
                     <h2 >Ingredientes</h2>
-                    <textarea class="areaTexto"></textarea>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
                 </div>
                 <div class="contenedorCompartir espacioCompartir">
                     <h2>Pasos</h2>
-                    <textarea class="areaTexto"></textarea>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
                 </div>
 
                 <div class="fotosCompartir espacioCompartir">
                     <h2 >Fotos</h2>
-                    <input type="file" id="exampleFormControlFile1">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
 
-        <div class="contenedorCompartir espacioCompartir">
-            <input type="reset" Value="Resetear">
-            <input type="submit" value="Enviar">
-        </div>
+        <button type="reset" class="btn btn-default">Resetear Información</button>
+        <button type="submit" class="btn btn-default">Enviar</button>
     </form>
 </Section> <!--termina bloque principal-->
 <footer class="text-center text-lg-start pie">
